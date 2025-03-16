@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Coordinate system background -->
+  <rect width="800" height="600" fill="#f8f8f8"/>
+  
+  <!-- Millimeter grid -->
+  <g stroke="#dddddd" stroke-width="0.5">
+    <!-- Vertical lines -->
+    <line x1="50" y1="50" x2="50" y2="550"/>
+    <line x1="100" y1="50" x2="100" y2="550"/>
+    <line x1="150" y1="50" x2="150" y2="550"/>
+    <line x1="200" y1="50" x2="200" y2="550"/>
+    <line x1="250" y1="50" x2="250" y2="550"/>
+    <line x1="300" y1="50" x2="300" y2="550"/>
+    <line x1="350" y1="50" x2="350" y2="550"/>
+    <line x1="400" y1="50" x2="400" y2="550"/>
+    <line x1="450" y1="50" x2="450" y2="550"/>
+    <line x1="500" y1="50" x2="500" y2="550"/>
+    <line x1="550" y1="50" x2="550" y2="550"/>
+    <line x1="600" y1="50" x2="600" y2="550"/>
+    <line x1="650" y1="50" x2="650" y2="550"/>
+    <line x1="700" y1="50" x2="700" y2="550"/>
+    <line x1="750" y1="50" x2="750" y2="550"/>
+    
+    <!-- Horizontal lines -->
+    <line x1="50" y1="50" x2="750" y2="50"/>
+    <line x1="50" y1="100" x2="750" y2="100"/>
+    <line x1="50" y1="150" x2="750" y2="150"/>
+    <line x1="50" y1="200" x2="750" y2="200"/>
+    <line x1="50" y1="250" x2="750" y2="250"/>
+    <line x1="50" y1="300" x2="750" y2="300"/>
+    <line x1="50" y1="350" x2="750" y2="350"/>
+    <line x1="50" y1="400" x2="750" y2="400"/>
+    <line x1="50" y1="450" x2="750" y2="450"/>
+    <line x1="50" y1="500" x2="750" y2="500"/>
+    <line x1="50" y1="550" x2="750" y2="550"/>
+  </g>
+  
+  <!-- Origin coordinate system -->
+  <g stroke-width="2">
+    <line x1="150" y1="300" x2="250" y2="300" stroke="#ff0000"/>
+    <line x1="150" y1="300" x2="150" y2="200" stroke="#00ff00"/>
+    <line x1="150" y1="300" x2="100" y2="350" stroke="#0000ff"/>
+    
+    <!-- X-axis arrow -->
+    <polygon points="250,300 240,295 240,305" fill="#ff0000"/>
+    <!-- Y-axis arrow -->
+    <polygon points="150,200 145,210 155,210" fill="#00ff00"/>
+    <!-- Z-axis arrow -->
+    <polygon points="100,350 110,345 105,335" fill="#0000ff"/>
+    
+    <text x="260" y="300" font-family="Arial" font-size="14" fill="#ff0000">X</text>
+    <text x="150" y="190" font-family="Arial" font-size="14" fill="#00ff00">Y</text>
+    <text x="90" y="360" font-family="Arial" font-size="14" fill="#0000ff">Z</text>
+  </g>
+  
+  <!-- Upper arm (shoulder) -->
+  <g>
+    <rect x="150" y="290" width="100" height="20" fill="#bbbbbb" stroke="#000000"/>
+    <text x="180" y="285" font-family="Arial" font-size="12">Upper Arm</text>
+  </g>
+  
+  <!-- Elbow joint -->
+  <circle cx="250" cy="300" r="8" fill="#ffcc00" stroke="#000000"/>
+  <text x="240" y="325" font-family="Arial" font-size="12">Elbow</text>
+  
+  <!-- Forearm -->
+  <g>
+    <rect x="250" y="290" width="100" height="20" fill="#cccccc" stroke="#000000"/>
+    <text x="280" y="285" font-family="Arial" font-size="12">Forearm</text>
+  </g>
+  
+  <!-- Wrist joint -->
+  <circle cx="350" cy="300" r="8" fill="#ffcc00" stroke="#000000"/>
+  <text x="340" y="325" font-family="Arial" font-size="12">Wrist</text>
+  
+  <!-- Palm -->
+  <g>
+    <rect x="350" y="285" width="50" height="30" fill="#dddddd" stroke="#000000"/>
+    <text x="360" y="275" font-family="Arial" font-size="12">Palm</text>
+  </g>
+  
+  <!-- Fingers -->
+  <g>
+    <rect x="400" y="270" width="35" height="10" fill="#eeeeee" stroke="#000000"/>
+    <rect x="400" y="285" width="40" height="10" fill="#eeeeee" stroke="#000000"/>
+    <rect x="400" y="300" width="40" height="10" fill="#eeeeee" stroke="#000000"/>
+    <rect x="400" y="315" width="35" height="10" fill="#eeeeee" stroke="#000000"/>
+    <rect x="380" y="320" width="25" height="10" fill="#eeeeee" stroke="#000000"/>
+    
+    <text x="440" y="275" font-family="Arial" font-size="10">Index</text>
+    <text x="445" y="290" font-family="Arial" font-size="10">Middle</text>
+    <text x="440" y="305" font-family="Arial" font-size="10">Ring</text>
+    <text x="440" y="320" font-family="Arial" font-size="10">Pinky</text>
+    <text x="360" y="335" font-family="Arial" font-size="10">Thumb</text>
+  </g>
+  
+  <!-- Rotation indicators -->
+  <g stroke-dasharray="5,5" stroke="#333333" fill="none">
+    <path d="M 150,300 C 170,270 230,270 250,300" stroke-width="2"/>
+    <text x="190" y="265" font-family="Arial" font-size="12">s/S: Shoulder rotation</text>
+    <path d="M 250,300 C 270,270 330,270 350,300" stroke-width="2"/>
+    <text x="280" y="265" font-family="Arial" font-size="12">e/E: Elbow rotation</text>
+    <path d="M 350,300 C 360,280 390,280 400,300" stroke-width="2"/>
+    <text x="360" y="250" font-family="Arial" font-size="12">w/W: Wrist rotation</text>
+  </g>
+  
+  <!-- Finger movement indicators -->
+  <g stroke="#333333" stroke-width="1" fill="none">
+    <path d="M 417,270 L 435,250" stroke-dasharray="3,3"/>
+    <path d="M 420,285 L 440,265" stroke-dasharray="3,3"/>
+    <path d="M 420,300 L 440,280" stroke-dasharray="3,3"/>
+    <path d="M 417,315 L 435,295" stroke-dasharray="3,3"/>
+    <path d="M 380,320 L 380,340" stroke-dasharray="3,3"/>
+    
+    <text x="440" y="250" font-family="Arial" font-size="10">i/I</text>
+    <text x="445" y="265" font-family="Arial" font-size="10">m/M</text>
+    <text x="445" y="280" font-family="Arial" font-size="10">r/R</text>
+    <text x="440" y="295" font-family="Arial" font-size="10">p/P</text>
+    <text x="370" y="350" font-family="Arial" font-size="10">t/T</text>
+  </g>
+  
+  <!-- Transformation matrix examples -->
+  <g>
+    <rect x="550" y="100" width="160" height="120" fill="#ffffff" stroke="#000000"/>
+    <text x="560" y="120" font-family="Arial" font-size="12" font-weight="bold">Shoulder (s/S)</text>
+    <text x="560" y="140" font-family="Arial" font-size="12">Rotation around Z-axis</text>
+    <text x="560" y="160" font-family="Courier" font-size="10">| cos(θ) -sin(θ) 0 0 |</text>
+    <text x="560" y="175" font-family="Courier" font-size="10">| sin(θ)  cos(θ) 0 0 |</text>
+    <text x="560" y="190" font-family="Courier" font-size="10">|   0       0    1 0 |</text>
+    <text x="560" y="205" font-family="Courier" font-size="10">|   0       0    0 1 |</text>
+    
+    <rect x="550" y="240" width="160" height="120" fill="#ffffff" stroke="#000000"/>
+    <text x="560" y="260" font-family="Arial" font-size="12" font-weight="bold">Elbow (e/E)</text>
+    <text x="560" y="280" font-family="Arial" font-size="12">Rotation around Z-axis</text>
+    <text x="560" y="300" font-family="Courier" font-size="10">| cos(θ) -sin(θ) 0 0 |</text>
+    <text x="560" y="315" font-family="Courier" font-size="10">| sin(θ)  cos(θ) 0 0 |</text>
+    <text x="560" y="330" font-family="Courier" font-size="10">|   0       0    1 0 |</text>
+    <text x="560" y="345" font-family="Courier" font-size="10">|   0       0    0 1 |</text>
+    
+    <rect x="550" y="380" width="160" height="150" fill="#ffffff" stroke="#000000"/>
+    <text x="560" y="400" font-family="Arial" font-size="12" font-weight="bold">Finger Movement</text>
+    <text x="560" y="420" font-family="Arial" font-size="12">Index (i/I): Y-axis</text>
+    <text x="560" y="440" font-family="Arial" font-size="12">Middle (m/M): Y-axis</text>
+    <text x="560" y="460" font-family="Arial" font-size="12">Ring (r/R): Y-axis</text>
+    <text x="560" y="480" font-family="Arial" font-size="12">Pinky (p/P): Y-axis</text>
+    <text x="560" y="500" font-family="Arial" font-size="12">Thumb (t/T): X-axis</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="250" y="80" font-family="Arial" font-size="24" font-weight="bold">OpenGL Robot Arm Transformations</text>
+  <text x="200" y="110" font-family="Arial" font-size="16">Coordinate System and Joint Movements</text>
+</svg>
